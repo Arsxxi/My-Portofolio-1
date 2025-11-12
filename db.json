@@ -1,0 +1,90 @@
+{
+  "profile": {
+    "name": "Clio Marco Mataheru",
+    "subtitle": "I am a self taught designer and your front end guy.",
+    "image": "/assets/Untitled-131.png",
+    "contact": {
+      "email": "polobitung@gmail.com",
+      "phone": "62-812-4267-4632"
+    }
+  },
+  "about": {
+    "title": "Hello I'm Clio !",
+    "description": "an Informatics student at Universitas Klabat with a strong interest in AI-based systems, UI/UX design, and data analysis. I actively engage in academic and creative projects involving information systems, user interface development, and research focused on leveraging modern technologies like Large Language Models (LLMs) to enhance user interaction. I also have part-time experience as a Data Manager and Graphic Designer in various organizations."
+  },
+  "education": [
+    {
+      "id": 1,
+      "year": "2021 - 2022",
+      "degree": "SMP Negeri 1 Bitung Sulut",
+      "institution": "",
+      "icon": "🎓"
+    },
+    {
+      "id": 2,
+      "year": "2021 - 2022",
+      "degree": "SMA Negeri 1 Bitung",
+      "institution": "IPA 4",
+      "icon": "🎓"
+    },
+    {
+      "id": 3,
+      "year": "2023 - Now",
+      "degree": "Universitas Klabat",
+      "institution": "Computer Science",
+      "icon": "🎓"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "year": "2022 - 2023",
+      "position": "Data Management",
+      "company": "Vape Republic Bitung"
+    },
+    {
+      "id": 2,
+      "year": "2023 - Now",
+      "position": "Video Editor / Graphic Designer",
+      "company": "Freelance"
+    }
+  ],
+  "skills": {
+    "software": [
+      { "name": "Figma", "icon": "figma" },
+      { "name": "Adobe XD", "icon": "adobe" },
+      { "name": "Framer", "icon": "framer" },
+      { "name": "Blender", "icon": "blender" }
+    ],
+    "coding": [
+      { "name": "Next JS/React JS", "level": "Advanced" },
+      { "name": "PHP", "level": "Beginner" },
+      { "name": "Java", "level": "Beginner" },
+      { "name": "Pyton", "level": "Advanced" },
+      { "name": "C#", "level": "Intermediate" }
+    ]
+  },
+  "languages": [
+    { "name": "English", "level": "Intermediate" },
+    { "name": "Indonesian", "level": "Native" }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "year": "2023 - 2024",
+      "role": "Proxocoris Internasional Competition",
+      "organization": "UVICS"
+    },
+    {
+      "id": 2,
+      "year": "2024",
+      "role": "KKM",
+      "organization": "Marsha & Friend's"
+    }
+  ],
+  "hobbies": [
+    { "name": "Guitar", "icon": "GiGuitarBassHead" },
+    { "name": "Automotive", "icon": "GiMechanicGarage" },
+    { "name": "Manga", "icon": "RiBookFill" }
+  ]
+}
