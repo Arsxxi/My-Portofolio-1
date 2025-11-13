@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const About = () => {
   const [about, setAbout] = useState(null);
   const [profile, setProfile] = useState(null);
+  const [isRevealed, setIsRevealed] = useState(false);
+  const [isParagraphRevealed, setIsParagraphRevealed] = useState(false); 
+  const [isButtonRevealed, setIsButtonRevealed] = useState(false); 
 
   useEffect(() => {
     fetch('http://localhost:3001/about')
@@ -26,24 +29,39 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="space-y-6 px-12">
-            <h2 className="text-8xl font-bold leading-tight font-normal font-['Provicali'] animate-fade-in-up animation-delay-600">
+            
+             <h2 
+              className={`text-8xl fon leading-tight font-normal font-['Provicali'] transition-opacity duration-300
+                                                
+              ${isRevealed ? 'opacity-100 animate-fade-in-up animation-delay-300' : 'opacity-0'}`}
+
+              onMouseEnter={() => setIsRevealed(true)}
+            >
               {about.title}
             </h2>
-            <p className="text-xl font-normal font-serif  text-gray-300 animate-fade-in-up animation-delay-600">
+              <p 
+              className={`text-xl font-normal font-serif text-gray-300 transition-all duration-1200
+                ${isParagraphRevealed ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+              onMouseEnter={() => setIsParagraphRevealed(true)}
+            >
               {about.description}
             </p>
-            <button  onClick={() => window.open("https://www.linkedin.com/in/clio-mataheru-02a935339/", "_blank")} className="btn-primary !bg-[#F5B80E] !font- !font-['Prociono'] text-black flex items-center justify-center gap-2  adow-lg transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
-             hover:scale-110 hover:bg-yellow-400 hover:text-black hover:shadow-2xl hover:-translate-y-1">
-              
-              <span className='text-3xl text-black '>  
-
-                        <FaLinkedin/>
-                        
-                </span>
-                <span className='text-2xl'> See My Linkedin</span>
-            </button>
+          <button 
+            onClick={() => window.open("https://www.linkedin.com/in/clio-mataheru-02a935339/", "_blank")} 
+            className={`btn-primary !bg-[#F5B80E] !font-['Prociono'] text-black flex items-center justify-center gap-2 shadow-lg
+              transition-all duration-700 ease-out
+              hover:scale-105 hover:bg-yellow-400 hover:shadow-2xl hover:-translate-y-2
+              active:scale-95
+              ${isButtonRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            onMouseEnter={() => setIsButtonRevealed(true)}
+          >
+            
+            <span className='text-3xl text-black transition-transform duration-500 ease-out hover:rotate-12 hover:scale-110'>  
+              <FaLinkedin/>
+            </span>
+            <span className='text-2xl'>See My Linkedin</span>
+        </button>
           </div>
-
           {/* Contact Card */}
           <div className="justify-center w-180">
             <div className="">

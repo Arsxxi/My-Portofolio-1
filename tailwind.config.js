@@ -10,7 +10,12 @@ export default {
         primary: '#343A40',
         secondary: '#495057',
         accent: '#6C757D',
-      }
+      },
+       fontFamily: {
+        sans: ['system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        provicali: ['Provicali', 'serif'],
+        prociono: ['Prociono', 'serif'],
+      },
     },
   },
   plugins: [],

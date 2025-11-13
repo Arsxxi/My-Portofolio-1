@@ -29,7 +29,7 @@ const Hero = () => {
 
           {/* Text Section */}
           <div className="space-y-6">
-            <h1 className="!text-8xl font-normal font-['Provicali'] animate-fade-in-up animation-delay-400">
+            <h1 className="!text-8xl font-normal font-[Provicali] animate-fade-in-up animation-delay-400">
               My portofolio
             </h1>
             <h2 className="text-5xl w-100 leading-15 md:text-6xl font-normal font-['Glasing'] animate-fade-in-up animation-delay-600">
